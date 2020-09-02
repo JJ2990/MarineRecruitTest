@@ -1,0 +1,49 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+  <div class="container justify-content-left">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="row justify-content-center title">
+        <div class="col-1">
+        <button class="btn-primary" id="Q4"> < </button>
+      </div>
+        <div class="col-10 text-center">
+      Question 5
+        </div>
+      <div class="col-1">
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <div class="row">
+      <div class="col-6">
+          Which battle featured intense house-to-house street fighting tactics that Marines would use in Fallujah?
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+            <label for="question-1-answers-A">A) Iwo Jima </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+            <label for="question-1-answers-A">B) Chosin Reservoir </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-Right" value="C" />
+            <label for="question-1-answers-A">C) Battle of Hue </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+            <label for="question-1-answers-A">D) Battle of Belleau Wood </label>
+          </div>
+          <div id="Qresult">
+            <button class="btn-primary justify-content-right" id="checkbtn1">Check Answer</button>
+          </div>
+      </div>
+    <div class="col-6 justify-content-center">
+        <img width="100%" src="https://www.marines.com/content/dam/marines-com/who-we-are/legacy/battles-through-time/Hue2-Z4-image1-700x610.jpg.img.full.low.jpg/1545250654228.jpg" alt = "Battle">
+    </div>
+  </div>
+
+  </div>
+{% endblock %}

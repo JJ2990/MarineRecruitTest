@@ -1,0 +1,49 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+  <div class="container justify-content-left">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="row justify-content-center title">
+        <div class="col-1">
+      </div>
+        <div class="col-10 text-center">
+      Question 1
+        </div>
+      <div class="col-1">
+        <button class="btn-primary" id="nextQ"> > </button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <div class="row">
+      <div class="col-6">
+          Which one of these Marines (pictured here) earned two Medals of Honor for separate actions?
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+            <label for="question-1-answers-A">A) Bob Boly </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-Right" value="B" />
+            <label for="question-1-answers-A">B) Dan Daly </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+            <label for="question-1-answers-A">C) Rob Roly </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+            <label for="question-1-answers-A">D) Tom Toly </label>
+          </div>
+          <div id="Qresult">
+            <button class="btn-primary justify-content-right" id="checkbtn1">Check Answer</button>
+          </div>
+      </div>
+    <div class="col-6 justify-content-center">
+        <img width="100%" src="https://www.usmcu.edu/portals/218/HD/People/Marine%20Corps%20Medal%20of%20Honor%20Recipients/Daly_DJ_0.jpg?ver=2019-02-26-095234-947&timestamp=1552582659031" alt = "Picture of Marine">
+    </div>
+  </div>
+
+  </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+  <div class="container justify-content-left">
+    <div class="row justify-content-center title">
+      <div class="col-1">
+        <button class="btn-primary" id="prev"> < </button>
+      </div>
+        <div class="col-10 text-center">
+      {{name}}
+        </div>
+      <div class="col-1">
+        <button class="btn-primary" id="next"> > </button>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+         <img width="100%" src= {{pic}} alt = "{{alt}}">
+          </img>
+      </div>
+      <div class="col-md-5 center">
+        {{text|safe}}
+      </div>
+    </div>
+  </div>
+{% endblock %}

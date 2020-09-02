@@ -1,0 +1,50 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+  <div class="container justify-content-left">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="row justify-content-center title">
+        <div class="col-1">
+        <button class="btn-primary" id="Q3"> < </button>
+      </div>
+        <div class="col-10 text-center">
+      Question 4
+        </div>
+      <div class="col-1">
+        <button class="btn-primary" id="Q5"> > </button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <div class="row">
+      <div class="col-6">
+          The Marines earned this nickname at the Battle of Belleau Wood:
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-Right" value="A" />
+            <label for="question-1-answers-A">A) Teufelhunden </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+            <label for="question-1-answers-A">B) Leathernecks </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+            <label for="question-1-answers-A">C) Jarheads </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+            <label for="question-1-answers-A">D) Blue Falcons </label>
+          </div>
+          <div id="Qresult">
+            <button class="btn-primary justify-content-right" id="checkbtn1">Check Answer</button>
+          </div>
+      </div>
+    <div class="col-6 justify-content-center">
+        <img width="100%" src="https://www.marines.com/content/dam/marines-com/who-we-are/legacy/battles-through-time/Belleau_Wood-Z3-image1-700x610.jpg.img.full.low.jpg/1490045752063.jpg" alt = "Battle of Belleau Wood">
+    </div>
+  </div>
+
+  </div>
+{% endblock %}

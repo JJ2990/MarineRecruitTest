@@ -1,0 +1,50 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+  <div class="container justify-content-left">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="row justify-content-center title">
+        <div class="col-1">
+        <button class="btn-primary" id="nextQ"> < </button>
+      </div>
+        <div class="col-10 text-center">
+      Question 3
+        </div>
+      <div class="col-1">
+        <button class="btn-primary" id="Q4"> > </button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <div class="row">
+      <div class="col-6">
+          When is the Marine Corps Birthday?
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+            <label for="question-1-answers-A">A) November 11, 1776 </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+            <label for="question-1-answers-A">B) November 11, 1775 </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+            <label for="question-1-answers-A">C) November 10, 1776 </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-Right" value="D" />
+            <label for="question-1-answers-A">D) November 10, 1775 </label>
+          </div>
+          <div id="Qresult">
+            <button class="btn-primary justify-content-right" id="checkbtn1">Check Answer</button>
+          </div>
+      </div>
+    <div class="col-6 justify-content-center">
+        <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Sketch_of_Tun_Tavern_in_the_Revolutionary_War.jpg/1200px-Sketch_of_Tun_Tavern_in_the_Revolutionary_War.jpg" alt = "Tun Tavern">
+    </div>
+  </div>
+
+  </div>
+{% endblock %}

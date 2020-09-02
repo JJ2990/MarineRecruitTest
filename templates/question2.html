@@ -1,0 +1,50 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+  <div class="container justify-content-left">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="row justify-content-center title">
+        <div class="col-1">
+        <button class="btn-primary" id="startQ"> < </button>
+      </div>
+        <div class="col-10 text-center">
+      Question 2
+        </div>
+      <div class="col-1">
+        <button class="btn-primary" id="Q3"> > </button>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  <div class="row">
+      <div class="col-6">
+          Who does the Blood Stripe commemorate?
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+            <label for="question-1-answers-A">A) The Frozen Chosin </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+            <label for="question-1-answers-A">B) The Marines killed in Iwo Jima in World War II </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-Right" value="C" />
+            <label for="question-1-answers-A">C) The Marines killed in the Battle of Chapultepec in 1847 </label>
+          </div>
+          <div>
+            <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+            <label for="question-1-answers-A">D) Gunnery Sergeant Carlos Hathcock </label>
+          </div>
+          <div id="Qresult">
+            <button class="btn-primary justify-content-right" id="checkbtn1">Check Answer</button>
+          </div>
+      </div>
+    <div class="col-6 justify-content-center">
+        <img width="100%" src="https://www.usmcmuseum.com/uploads/6/0/3/6/60364049/__1454386849.png" alt = "Picture">
+    </div>
+  </div>
+
+  </div>
+{% endblock %}
